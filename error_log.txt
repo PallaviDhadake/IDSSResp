@@ -1,0 +1,6 @@
+11/11/2022
+ASP.partner_with_us_aspx
+btnSubmit_Click
+Mailbox name not allowed. The server response was: Relaying disallowed as info@intellect-systems.com
+
+

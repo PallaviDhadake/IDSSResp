@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/vidbacking.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Video Backing</title>
+
+    <style>
+        .clearfix {
+            display: block;
+            clear: both;
+            float: none;
+        }
+
+        body {
+            display: block;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        nav {
+            display: block;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+
+            nav h2 {
+                display: block;
+                float: left;
+                color: #2b2b2b;
+                text-decoration: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul {
+                display: block;
+                float: right;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                margin-top: 5px;
+            }
+
+                nav ul li {
+                    display: block;
+                    float: left;
+                    margin-left: 20px;
+                }
+
+                    nav ul li a {
+                        color: #5ba9e2;
+                        text-decoration: none;
+                    }
+
+                        nav ul li a:hover {
+                            text-decoration: underline;
+                        }
+
+        .video-back {
+            display: block;
+            padding: 100px 0px;
+            text-align: center;
+        }
+
+            .video-back h1 {
+                display: block;
+                text-align: center;
+                color: #fff;
+                text-shadow: 2px 2px 4px #000;
+                font-size: 50px;
+            }
+
+            .video-back p {
+                display: block;
+                color: #fff;
+                text-shadow: 2px 2px 1px #000;
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 20px;
+            }
+
+            .video-back img {
+                width: 150px;
+            }
+
+        .main-heading {
+            text-align: center;
+            margin: 50px auto;
+            font-size: 70px;
+        }
+
+        .main-para {
+            margin: 10px 100px;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo"><h2>Logo</h2></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </nav>
+
+    <div class="video-back">
+        <iframe width="560" height="315" src="https://player.vimeo.com/video/771979298" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="vidbacking"></iframe>
+        <h1>VidBacking Demo of YouTube on &lt;div&gt; Background</h1>
+        <p>Run YouTube video as element background using <b>jquery.vidbacking.js</b>.</p>
+        <p>For source code &amp; plugin download:</p>
+        <a href="https://github.com/souravm84/vidbacking"><img src="assets/github-link-button.png" alt="github button"></a>
+        <div class="clearfix"></div>
+    </div>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--<script src="dist/jquery.vidbacking.js" type="text/javascript"></script>-->
+    <script src="js/vidbacking.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.video-back').vidbacking({
+                'masked': true
+            });
+        });
+    </script>
+</body>
+</html>

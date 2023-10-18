@@ -1,0 +1,230 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterParent.master.cs" Inherits="MasterParent" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>IDSS Global - International Design &amp; Software Solutions</title>
+    
+    <meta name="description" content="Cad outsourcing, Cad outsourcing companies in pune Maharashtra India, Lightning protection companies in pune, Architect cad outsourcing, Mechanical outsourcing companies pune, Civil engineering outsourcing pune" />
+    
+    <link href="<%# rootPath + "css/generic.css" %>" rel="stylesheet" type="text/css" />
+    <link href="<%# rootPath + "css/idss.css" %>"  rel="stylesheet" type="text/css" />
+    
+    <script src="<%# rootPath + "js/jquery-2.2.4.min.js" %>"  type="text/javascript"></script>
+    <link href="<%# rootPath + "css/jquery.fancybox.css" %>" rel="stylesheet" />
+    <script src="<%# rootPath + "js/jquery.fancybox.js" %>"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-219110370-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-219110370-1');
+</script>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body oncontextmenu="return false;">
+    <!-- Top bar starts 
+    <div class="topBar">
+        <div class="col_1140">
+            <div class="padTB8">
+            <a href="tel:1-628-400-5833" class="callTop">TOLLFREE: 1-628-400-5833</a>
+             <a href="tel:+91-9960900134" class="callTop">+91-9960900134</a>
+             <a href="career-apply.aspx" title="Job opportunities at IDSS Global" class="jobTop">For Jobs <span>Click Here</span></a>
+             <div class="float_clear"></div>
+            </div>
+        </div>
+    </div>
+   Top bar ends -->
+     <!-- Header starts -->
+    <div class="bgGrey" id="topContact">
+        <div class="col_1140 posRelative">
+            <div class="pad_20">
+                <div class="contactPanel">
+                    <a href="tel:+91-9960900134" class="indFlag fontArial">+91-9960900134</a>
+                    <a href="tel:+1(347)408-1246" class="usaFlag fontArial">+1(347)408-1246</a>
+                    <span class="contText fontArial">For Enquiry:&nbsp;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <div class="col_1140 posRelative">
+            <div class="pad_TB_15">
+                <a href="<%= rootPath %>">
+                    <img alt="" src="<%=rootPath + "images/idss-logo.png" %>" class="logo" />
+                    <img alt="" src="<%=rootPath + "images/idss-logo-name.png" %>"  class="logoName" />
+                </a>
+                 <img alt="" src="<%=rootPath + "images/certified-logos.png" %>"  class="certLogos" />
+                <div class="float_clear"></div>
+            </div>
+            <div class="contactPanel"  id="contact">
+                <a href="tel:+919960900134" class="indFlag fontArial">+91-9960900134</a>
+                <a href="tel:+1(347)408-1246" class="usaFlag fontArial">+1(347)408-1246</a>
+                <span class="contText fontArial">For Enquiry:&nbsp;</span>
+            </div>
+            <!--
+            <span class="tollFree">TOLLFREE: 1-628-400-5833</span>
+             <span class="usaFlag">+44-7774792777</span>
+            <span class="indFlag">+91-9960900134</span>
+            <div class="float_clear"></div>
+            <span class="space10"></span>
+            -->
+        </div>
+        <div class="line2X themeBGPrime"></div>
+    </div>
+    <!-- Header ends -->
+    <!-- Responsive Navigation Btn starts -->
+    <div class="themeBGPrime disp-none">
+        <div class="col_1140 posRelative" id="nav">
+            <a id="navigationBtn"></a>
+            <div class="float_clear"></div>
+            <div class="socialPanel">
+               <span class="anchUSA">NEW YORK, NY, USA</span>
+               <a href="https://www.facebook.com/IDSS-Global-2163901323891144" class="anchSocial icoFacebook" target="_blank" title="Facebook: IDSS Global"></a>
+               <a href="https://www.linkedin.com/company/idss-global/" class="anchSocial icoLinkedIn" target="_blank" title="LinkedIn: IDSS Global"></a>
+               <a href="https://twitter.com/GlobalIdss" class="anchSocial icoTwitter" target="_blank" title="Twitter: IDSS Global"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Responsive Navigation Btn ends -->
+    <!-- Navigation Starts -->
+    <div id="topNavPanel" >
+        <div class="col_1140 posRelative">
+             <div class="socialPanel">
+                <span class="anchUSA">NEW YORK, NY, USA</span>
+                <a href="https://www.facebook.com/IDSS-Global-2163901323891144" class="anchSocial icoFacebook" target="_blank" title="Facebook: IDSS Global"></a>
+                <a href="https://www.linkedin.com/company/idss-global/" class="anchSocial icoLinkedIn" target="_blank" title="LinkedIn: IDSS Global"></a>
+                <a href="https://twitter.com/GlobalIdss" class="anchSocial icoTwitter" target="_blank" title="Twitter: IDSS Global"></a>
+            </div>
+            <ul id="topNav">
+                <li><a href="<%=rootPath %>">Home</a></li>
+                <li><a class="subNav">About Us</a>
+                    <ul>
+                        <li><a href="<%=rootPath + "about-us.aspx" %>">Overview</a></li>
+                        <li><a href="<%=rootPath + "other-facts.aspx" %>">Our Strength</a></li>
+                        <li><a href="<%=rootPath + "our-team.aspx" %>">IDSS Team</a></li>
+                        <li><a href="<%=rootPath + "testimonials.aspx" %>">Testimonials</a></li>
+                    </ul>
+                </li>
+                <li><a class="subNav">Services</a>
+                    <ul>
+                        <li><a href="<%=rootPath + "services" %>">Overview</a></li>
+                        <li><a href="<%=rootPath + "civil-engineering-services" %>">Civil Engineering</a></li>
+                        <li><a href="<%=rootPath + "mechanical-engineering-services" %>">Mechanical Engineering</a></li>
+                        <li><a href="<%=rootPath + "architect-services" %>">Architectural</a></li>
+                        <li><a href="<%=rootPath + "lightning-protection-system-design" %>">Lightning Protection System Design</a></li>
+                        <li><a href="<%=rootPath + "geotechnical-engineering-design" %>">Geotechnical Engineering</a></li>
+                        <li><a href="<%=rootPath + "information-technology" %>">Information Technology</a></li>
+                    </ul>
+                </li>
+                <li><a>Portfolio</a>
+                    <%=menuStr %>
+                    <%--<ul>
+                        <li><a >Indian</a>
+                            <ul>
+                                <li><a href="#">Menu 1</a></li>
+                                <li><a href="#">Menu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>International</a>
+                            <ul>
+                                <li><a href="#">Menu 1</a></li>
+                                <li><a href="#">Menu 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>--%>
+                </li>
+                <li><a class="subNav">Info Center</a>
+                    <ul>
+                        <li><a href="<%=rootPath + "certification.aspx" %>">Certification</a></li>
+                        <li><a href="<%=rootPath + "news" %>">News Events</a></li>
+                        <li><a href="<%=rootPath + "frequently-asked-questions.aspx" %>">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a href="<%=rootPath + "partner-with-us" %>">Partner With Us</a></li>
+                <li><a class="subNav">Career</a>
+                    <ul>
+                        <li><a href="<%=rootPath + "career-intro.aspx" %>">Introduction</a></li>
+                        <li><a href="<%=rootPath + "career-apply.aspx" %>">Apply Online</a></li>
+                    </ul>
+                </li>
+                <li><a href="<%=rootPath + "contact-us.aspx" %>">Contact</a></li>
+            </ul>
+            <div class="float_clear"></div>
+        </div>
+    </div>
+    <%--<div id="navBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>--%>
+    <!-- Navigation Ends -->
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <span class="space40"></span>
+    </form>
+    <div class="liner themeBGPrime"></div>
+    <!-- footer start -->
+    <div class="width100">
+        <div class="footerBg">
+            <div class="col_1140 txtCenter">
+                <span class="space20"></span>
+                <img src="<%=rootPath + "images/idss-logo-trans.png" %>" alt="IDSS Global" class="footLogo"/>
+                <ul class="footerNav">
+                    <li><a href="<%=rootPath + "about-us.aspx" %>" class="bold">About Us</a></li>
+                    <li><a href="<%=rootPath + "services.aspx" %>" class="bold">Services</a></li>
+                    <li><a href="<%=rootPath + "projects.aspx" %>" class="bold">Portfolio</a></li>
+                    <li><a href="<%=rootPath + "news" %>" class="bold">News</a></li>
+                    <li><a href="<%=rootPath + "partner-with-us" %>" class="bold">Partner With Us</a></li>
+                    <li><a href="<%=rootPath + "career-intro.aspx" %>" class="bold">Career</a></li>
+                    <li><a href="<%=rootPath + "contact-us.aspx" %>" class="bold">Contact Us</a></li>
+                    <li><a href="<%=rootPath + "disclaimer.aspx" %>" class="bold">Disclaimer</a></li>
+                    <li><a href="<%=rootPath + "privacy-policy.aspx" %>" class="bold">Privacy Policy</a></li>
+                </ul>
+                <span class="colorBlack">IDSS Global &copy; 2010<script type="text/javascript">new Date().getFullYear() > 2010 && document.write("-" + new Date().getFullYear());</script>. All Rights Reserved</span>
+                <span class="space10"></span>
+            </div>
+        </div>
+    </div>
+    <!-- footer Ends -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#navigationBtn').click(function () {
+                $(this).toggleClass('open');
+                $("#topNav").slideToggle("2000");
+            });
+        });
+    </script>  
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5b83c4dbf31d0f771d842af7/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
